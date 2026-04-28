@@ -19,7 +19,7 @@ A google sheets on my end that shows when my appointments are
 
 | Requirement | Implementation |
 |---|---|
-| **If Statements & Loops** | Generating the bracket requires looping over contestants to pair them into first-round matches. If statements determine whether a round is complete (all winners chosen) before unlocking the next round, and check edge cases like odd contestant counts or a bye slot. |
+| **If Statements & Loops** | I will do this tomorrow
 | **Event Listeners** | Click listeners on each match card select the winner and trigger a re-render. A submit listener on the setup form kicks off bracket generation. A reset button clears state after a confirmation check. |
 | **DOM Element Creation** | The entire bracket (every round column, match card, contestant name label, and winner indicator) is built dynamically with `createElement` and `appendChild`. Nothing is hardcoded in the HTML beyond the app shell. |
 | **Classes & Subclasses** | A base `Tournament` class holds the contestant list, bracket state, and methods like `generateBracket()` and `recordWinner()`. `SingleEliminationTournament` extends `Tournament` and implements the specific bracket-advancement logic. A `Match` class represents each individual pairing with properties for both contestants and the winner. |
