@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nail Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Nail Studio</h1>
+      <h3>Book your next appointment below</h3>
+    </header>
+
+    <main>
+        <section id="service-container">
+            <h2>Our Services</h2>
+            <div id="service-list"></div>
+        </section>
+
+        <section id="booking-section">
+            <h2>Book Appointment</h2>
+            <form id="booking-form">
+                <input type="text" id="client-name" placeholder="Full Name" required>
+                <input type="email" id="client-email" placeholder="Email Address" required>
+                
+                <label for="service-select">Selected Service:</label>
+                <input type="text" id="service-select" readonly required>
+
+                <label for="appt-date">Date & Time:</label>
+                <input type="datetime-local" id="appt-date" required>
+
+                <button type="submit" id="submit-btn">Confirm Booking</button>
+            </form>
+            <div id="confirmation-msg"></div>
+            <img src="IMG_1736.png" height="500px" >
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
